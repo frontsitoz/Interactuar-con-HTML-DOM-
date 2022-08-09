@@ -9,12 +9,12 @@ class Billete
     this.imagen.src = imagenes[this.valor];
   }
 }
-
+//Billetes
 var imagenes = [];
-imagenes["100"] = "100.png";
-imagenes["50"] = "50.png";
-imagenes["20"] = "20.png";
-imagenes["10"] = "10.png";
+imagenes["100"] = "./assets/100.png";
+imagenes["50"] = "./assets/50.png";
+imagenes["20"] = "./assets/20.png";
+imagenes["10"] = "./assets/10.png";
 
 
 var caja = [];
@@ -28,7 +28,7 @@ var entregado = [];
 var dinero;
 var div;
 var papeles;
-
+//boton para ver saldo
 var boton_saldo = document.getElementById("ver_saldo");
 boton_saldo.addEventListener("click", saldo);
 
@@ -54,7 +54,7 @@ var cantidad = document.getElementById("cantidad");
 var resultado = document.getElementById("resultado");
 var b = document.getElementById("extraer");
 
-
+//Entregar dinero 
 b.addEventListener("click", entregarDinero);
 
 
